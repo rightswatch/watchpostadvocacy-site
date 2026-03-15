@@ -1,77 +1,65 @@
 ---
-title: "Know Your Rights: Mesothelioma and Title IX Survivors"
-description: "Plain-language legal rights guide for mesothelioma patients and Title IX survivors in Missouri and Illinois."
+title: "Know Your Rights: School Abuse and Title IX Survivors"
+description: "Plain-language legal rights guide for school abuse survivors and Title IX claimants in Missouri and Illinois."
 layout: "aux"
 date: 2026-03-14
 ---
 
 <div class="aux-layout">
 
-# Know Your Rights
+# Know Your Rights: School Abuse and Title IX
 
 <div class="aux-intro">
-If you or a family member has been diagnosed with mesothelioma — or if you or your child was sexually abused at a school — you have specific legal rights that are real, substantial, and expire on hard deadlines that no court can extend once passed.
+If you or your child was sexually abused by a teacher, coach, administrator, or other school employee — or if a school failed to respond to a report of abuse — you have specific legal rights with real deadlines. This guide covers the two legal tracks available to survivors and what each one requires.
 </div>
 
-## Part I: Mesothelioma Survivor Rights
+## Two Legal Tracks, Two Clocks
 
-### Your Diagnosis Date Is a Legal Trigger
+### Track 1: OCR Complaint (Federal — Free)
 
-Under Missouri and Illinois law, the statute of limitations for mesothelioma claims begins to run from the date of diagnosis.
+The U.S. Department of Education's Office for Civil Rights (OCR) investigates complaints that a school violated Title IX. Filing costs nothing. The process is administrative, not a lawsuit.
 
-**Missouri — CRITICAL:** House Bill 68 amends Missouri's asbestos statute of limitations from **5 years to 2 years**, effective April 2025. If your diagnosis falls after HB68's effective date, you have 2 years. Consult a Missouri asbestos attorney immediately.
+**Deadline:** 180 days from the date of the discriminatory act. This clock does not pause for school investigations, criminal proceedings, or ongoing therapy. 180 calendar days.
 
-**Illinois:** 2-year statute of limitations under 735 ILCS 5/13-202.
+**What it produces:** A public investigation record. If OCR finds a violation, the school enters a resolution agreement requiring policy changes. OCR complaints do not produce personal money damages — but the record they create can be critical evidence in a civil lawsuit.
 
-### Multiple Recovery Sources
+**How to file:** [ocrcas.ed.gov](https://ocrcas.ed.gov) — online complaint submission, no attorney required.
 
-A mesothelioma diagnosis creates potential claims against multiple parties simultaneously:
+### Track 2: Civil Lawsuit (State Court — Damages)
 
-1. **Product liability claims** against asbestos product manufacturers
-2. **Premises liability claims** against facility owners
-3. **Asbestos bankruptcy trust claims** — over 60 trusts holding billions for asbestos claimants
-4. **Veterans' benefits** — if the claimant served in the Navy or other high-asbestos-exposure assignments
+A Title IX civil lawsuit in federal court, or state law negligence claims in state court, can produce compensatory and punitive damages against a school district or institution.
 
-### Trust Fund Claims: No Lawsuit Required
+**Missouri civil claims:**
+- Title IX federal civil action: generally 5-year SOL (borrowing Missouri personal injury statute)
+- Missouri state negligence: 5 years (RSMo 516.120) — tolled during minority
+- Missouri childhood sexual abuse: SOL extended — consult an attorney on current Missouri law
 
-Asbestos bankruptcy trust claims can be filed without a lawsuit. Claims are administrative — you submit documentation and the trust evaluates and pays. An experienced mesothelioma attorney handles trust claims on contingency.
+**Illinois civil claims:**
+- Childhood sexual abuse: no SOL for claims arising from abuse before age 18 (735 ILCS 5/13-202.2 as amended)
+- Title IX federal action: generally 2-year SOL
 
-### The Work History Is the Case
+**The federal standard (deliberate indifference):** To win a federal Title IX lawsuit, you must show that (1) an "appropriate person" — a principal, superintendent, or Title IX coordinator — had actual knowledge of the abuse or harassment, and (2) the school responded with deliberate indifference. Evidence comes from: prior complaints about the same person, personnel files, school board minutes, HR records, and Title IX coordinator correspondence.
 
-In a mesothelioma case, the work history maps to specific asbestos products and specific defendants. Every employer, every jobsite, every trade working alongside you — all of this establishes exposure to products from specific manufacturers. Union records, Social Security earnings records, co-worker testimony, and OSHA inspection records at specific facilities can reconstruct decades-old work history.
+**State law is often broader:** Missouri and Illinois negligent hiring, negligent supervision, and negligent retention claims may succeed even where the strict federal deliberate indifference standard is not met.
 
----
+## What Records Matter
 
-## Part II: Title IX Survivor Rights
-
-### Two Tracks, Two Clocks
-
-**Track 1 — OCR Complaint (Free):** Deadline is **180 days from the discriminatory act**. This deadline does not extend for criminal proceedings or school investigations. Filing costs nothing. Creates a public record but does not produce personal damages.
-
-**Track 2 — Civil Lawsuit:** Missouri — generally 5 years; Illinois — generally 2 years (tolled for minors). These clocks **do not pause** during OCR investigations.
-
-### The School's "Actual Knowledge" Is What Matters
-
-For a civil Title IX lawsuit, you must show an "appropriate person" — a principal, superintendent, or Title IX coordinator — had actual knowledge of the abuse and responded with deliberate indifference. This is established through: prior complaints about the same person, personnel files, school board minutes, HR records, and Title IX coordinator correspondence.
-
-### State Law Claims Are Broader
-
-Missouri and Illinois state law negligent hiring, negligent supervision, and negligent retention claims may apply even when the strict Title IX federal standard is not met.
-
-### Your Records Belong to You
-
-Request your student records under FERPA. They may contain documentation of prior complaints, disciplinary proceedings, or administrator communications that are essential in both OCR complaints and civil litigation.
-
----
+- **Student records (FERPA):** Request them. They may contain documentation of prior complaints, disciplinary proceedings, or administrator communications that become essential evidence.
+- **School board meeting minutes:** Public records. Executive sessions for "personnel matters" near the date of a known incident establish institutional knowledge.
+- **Educator certification records:** Missouri DESE and Illinois ISBE maintain public disciplinary records. A teacher revoked in Kansas but certified in Missouri is a "pass the trash" case.
+- **MSHSAA coaching records:** School assignments, certifications, and movement history. A coach at four schools in six years warrants investigation.
+- **OCR complaint database:** [ocrcas.ed.gov](https://ocrcas.ed.gov) — prior OCR findings against the same institution establish a pattern.
 
 ## When to Act
 
-**Mesothelioma:** Contact a mesothelioma attorney this week. Missouri's 2-year SOL under HB68 leaves no margin for delay.
+**If the abuse happened recently:** File an OCR complaint immediately if within 180 days. Contact a Title IX attorney about civil claims — Missouri and Illinois SOL clocks are running.
 
-**Title IX / school abuse:** File an OCR complaint immediately if within 180 days. Consult a Title IX attorney about civil claims before the SOL runs.
+**If the abuse happened years ago:** SOL analysis is fact-specific. Minority tolling, the discovery rule, and recent legislative changes to childhood sexual abuse SOLs in both states may extend your window. Consult a Title IX attorney before concluding that a claim is time-barred.
 
 ## Contact
 
 Questions: **mesowatchhelp@gmail.com**
+
+*This page is for informational purposes only. Nothing here constitutes legal advice. Consult a licensed attorney in your jurisdiction.*
 
 </div>

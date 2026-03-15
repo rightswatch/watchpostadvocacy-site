@@ -1,0 +1,70 @@
+{{- define "main" }}
+{{- partial "header.html" . }}
+<section class="site-hero">
+  <div class="container">
+    <span class="hero-eyebrow">Rights Watch Media Group LLC</span>
+    <h1 class="hero-headline">WatchPost Advocacy &mdash; Legal rights and advocacy resources for survivors</h1>
+    <p class="hero-subhead">Know your legal rights. WatchPost Advocacy publishes plain-language resources for mesothelioma and Title IX survivors.</p>
+    <div class="hero-callouts">
+      <span class="hero-callout"><span class="hero-callout__icon">&#10003;</span>Independent advocacy journalism</span>
+      <span class="hero-callout"><span class="hero-callout__icon">&#10003;</span>Missouri and Illinois focus</span>
+      <span class="hero-callout"><span class="hero-callout__icon">&#10003;</span>Survivor-centered resources</span>
+    </div>
+  </div>
+</section>
+<div class="stats-bar">
+  <div class="container">
+    <div class="stat-item"><span class="stat-number">5 Yrs</span><span class="stat-label">Missouri SOL before HB68 (now 2 yrs from April 2025)</span></div>
+    <div class="stat-item"><span class="stat-number">2 Yrs</span><span class="stat-label">new SOL under HB68 — act immediately</span></div>
+    <div class="stat-item"><span class="stat-number">180 Days</span><span class="stat-label">OCR complaint deadline from Title IX incident</span></div>
+    <div class="stat-item"><span class="stat-number">60+</span><span class="stat-label">active asbestos bankruptcy trust funds</span></div>
+  </div>
+</div>
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-item"><span class="trust-item__icon">&#9679;</span><span><strong>Editorial standards:</strong> content reviewed for accuracy</span></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="trust-item__icon">&#9679;</span><span><strong>Last reviewed:</strong> {{ now.Format "January 2006" }}</span></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="trust-item__icon">&#9679;</span><span><strong>Publisher:</strong> <a href="/about/">Rights Watch Media Group LLC</a></span></div>
+  </div>
+</div>
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Latest Articles</h2>
+      <a href="/posts/" class="view-all-link">View all &rarr;</a>
+    </div>
+    <div class="card-grid">
+      {{- $pages := where .Site.RegularPages "Section" "posts" | first 6 }}
+      {{- range $i, $p := $pages }}
+      <a href="{{ $p.RelPermalink }}" class="article-card{{- if eq $i 0 }} article-card--featured{{- end }}">
+        <div class="article-card__header">
+          <span class="article-card__category">{{- with $p.Params.categories }}{{ index . 0 }}{{- else }}General{{- end }}</span>
+        </div>
+        <div class="article-card__body">
+          <div class="article-card__title">{{ $p.Title }}</div>
+          <p class="article-card__excerpt">{{- with $p.Description }}{{ . | truncate 140 }}{{- else }}{{ $p.Summary | truncate 140 }}{{- end }}</p>
+          <div class="article-card__meta">
+            <span>{{ $p.Date.Format "Jan 2, 2006" }}</span>
+            <span class="article-card__read-more">Read more &rarr;</span>
+          </div>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header"><h2>Browse by Topic</h2></div>
+    <div class="topic-list">
+              <a href="/rights/" class="topic-item"><span class="topic-item__icon">&#9656;</span>Mesothelioma Legal Rights</a>
+              <a href="/rights/" class="topic-item"><span class="topic-item__icon">&#9656;</span>Title IX Survivor Rights</a>
+              <a href="/resources/" class="topic-item"><span class="topic-item__icon">&#9656;</span>Resource Directory</a>
+              <a href="/about/" class="topic-item"><span class="topic-item__icon">&#9656;</span>About WatchPost Advocacy</a>
+    </div>
+  </div>
+</section>
+{{- partial "footer.html" . }}
+{{- end }}

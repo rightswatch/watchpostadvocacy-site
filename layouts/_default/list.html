@@ -1,0 +1,57 @@
+{{- define "main" }}
+
+{{- partial "header.html" . }}
+
+<div class="container">
+  <div class="list-header">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}
+    <p class="list-header__desc">{{ . }}</p>
+    {{- end }}
+  </div>
+</div>
+
+<div class="container">
+  <div class="list-layout">
+    <main>
+      <div class="list-items">
+        {{- range .Pages }}
+        <a href="{{ .RelPermalink }}" class="list-item">
+          <span class="list-item__label">
+            {{- with .Params.categories }}{{ index . 0 }}{{- else }}Article{{- end }}
+          </span>
+          <div class="list-item__content">
+            <div class="list-item__title">{{ .Title }}</div>
+            <p class="list-item__excerpt">
+              {{- with .Description }}{{ . | truncate 160 }}{{- else }}{{ .Summary | truncate 160 }}{{- end }}
+            </p>
+            <div class="list-item__meta">
+              <span>{{ .Date.Format "January 2, 2006" }}</span>
+              <span>{{ .ReadingTime }} min read</span>
+            </div>
+          </div>
+        </a>
+        {{- end }}
+      </div>
+      {{- template "_internal/pagination.html" . }}
+    </main>
+
+    <aside class="article-sidebar">
+      <div class="sidebar-widget">
+        <div class="sidebar-widget__header">Browse Topics</div>
+        <div class="sidebar-widget__body">
+          {{- range .Site.Taxonomies.tags.ByCount | first 12 }}
+          <a href="{{ .Page.RelPermalink }}" style="display:flex; justify-content:space-between; align-items:center; padding:0.4rem 0; border-bottom:1px solid var(--color-border); font-size:0.875rem; color:var(--color-text-muted); transition:color 0.2s;" onmouseover="this.style.color='var(--color-accent)'" onmouseout="this.style.color='var(--color-text-muted)'">
+            <span>{{ .Page.Title }}</span>
+            <span style="font-size:0.75rem; background:var(--color-bg-alt); padding:0.1rem 0.45rem; border-radius:10px; font-weight:600;">{{ .Count }}</span>
+          </a>
+          {{- end }}
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+{{- partial "footer.html" . }}
+
+{{- end }}

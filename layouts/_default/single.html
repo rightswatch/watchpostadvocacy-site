@@ -1,0 +1,95 @@
+{{- define "main" }}
+
+{{- partial "header.html" . }}
+
+<div class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span class="breadcrumbs__sep">&rsaquo;</span>
+    {{- with .Parent }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <span class="breadcrumbs__sep">&rsaquo;</span>
+    {{- end }}
+    <span aria-current="page">{{ .Title }}</span>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="article-layout">
+    <main class="article-main">
+      <header class="article-header">
+        {{- with .Params.categories }}
+        <span class="article-category">{{ index . 0 }}</span>
+        {{- end }}
+        <h1 class="article-title">{{ .Title }}</h1>
+        {{- with .Description }}
+        <p class="article-subtitle">{{ . }}</p>
+        {{- end }}
+        <div class="article-byline">
+          <span><strong>By</strong> {{ .Params.author | default .Site.Params.author }}</span>
+          <span class="article-byline__sep">&bull;</span>
+          <span>{{ .Date.Format "January 2, 2006" }}</span>
+          {{- if .Params.lastmod }}
+          <span class="article-byline__sep">&bull;</span>
+          <span>Updated {{ .Lastmod.Format "January 2, 2006" }}</span>
+          {{- end }}
+          <span class="article-byline__sep">&bull;</span>
+          <span>{{ .ReadingTime }} min read</span>
+        </div>
+      </header>
+
+      <article class="article-body">
+        {{ .Content }}
+      </article>
+
+      {{- with .Params.tags }}
+      <div style="margin-top:2rem; padding-top:1.25rem; border-top:1px solid var(--color-border);">
+        <span style="font-size:0.8rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--color-text-light);">Tags: </span>
+        {{- range . }}
+        <a href="/tags/{{ . | urlize }}/" style="display:inline-block; font-size:0.8rem; background:var(--color-bg-alt); border:1px solid var(--color-border); border-radius:3px; padding:0.2rem 0.6rem; margin:0.15rem; color:var(--color-text-muted); transition:all 0.2s;">{{ . }}</a>
+        {{- end }}
+      </div>
+      {{- end }}
+
+      {{- with .PrevInSection }}
+      <div style="display:flex; justify-content:space-between; margin-top:3rem; padding-top:1.5rem; border-top:2px solid var(--color-border); gap:1rem;">
+        <a href="{{ .RelPermalink }}" style="font-size:0.875rem; color:var(--color-accent); font-weight:600;">&larr; {{ .Title }}</a>
+      </div>
+      {{- end }}
+
+    </main>
+
+    <aside class="article-sidebar">
+      {{- with .TableOfContents }}
+      <div class="sidebar-widget">
+        <div class="sidebar-widget__header">On This Page</div>
+        <div class="sidebar-widget__body">
+          <nav class="toc-nav">{{ . }}</nav>
+        </div>
+      </div>
+      {{- end }}
+
+      {{- $related := .Site.RegularPages.Related . | first 4 }}
+      {{- with $related }}
+      <div class="sidebar-widget">
+        <div class="sidebar-widget__header">Related Articles</div>
+        <div class="sidebar-widget__body">
+          {{- range . }}
+          <a href="{{ .RelPermalink }}" class="related-article">
+            <span class="related-article__cat">
+              {{- with .Params.categories }}{{ index . 0 }}{{- else }}Article{{- end }}
+            </span>
+            <span class="related-article__title">{{ .Title }}</span>
+          </a>
+          {{- end }}
+        </div>
+      </div>
+      {{- end }}
+
+    </aside>
+  </div>
+</div>
+
+{{- partial "footer.html" . }}
+
+{{- end }}

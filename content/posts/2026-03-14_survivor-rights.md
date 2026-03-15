@@ -29,9 +29,9 @@ The evidence that establishes deliberate indifference is often in the school's o
 
 ## What Missouri and Illinois Survivors Should Know Right Now
 
-**Missouri childhood sexual abuse:** Missouri has extended the SOL for childhood sexual abuse claims. Consult a Missouri attorney — the current law may give survivors more time than they expect. Minority tolling means the clock typically does not start until age 18.
+**Missouri — RSMo 537.046:** Missouri gives survivors the *later* of two windows: (1) 10 years after your 21st birthday, meaning until age 31, or (2) 3 years from when you first discovered — or reasonably should have discovered — that a current injury or condition was caused by childhood sexual abuse. The discovery window is critical: many survivors do not make that connection until years after the abuse, often in therapy or when an institutional pattern becomes public. If that connection was recently made, the 3-year window may not have started yet. Minority tolling under RSMo 516.170 also means the clock never ran during childhood — it starts at 18. **Do not assume you are barred without speaking to an attorney.**
 
-**Illinois childhood sexual abuse:** Illinois eliminated the SOL for childhood sexual abuse claims arising from abuse before age 18 (735 ILCS 5/13-202.2 as amended). If the abuse happened when you were a minor, Illinois law may allow a claim regardless of when it occurred.
+**Illinois — 735 ILCS 5/13-202.2:** Illinois has eliminated the statute of limitations entirely for civil claims arising from childhood sexual abuse when the plaintiff was under 18. There is no deadline. An Illinois survivor can bring a civil claim at any point in their life. The state law no-SOL claim is broader than the federal Title IX claim and should be analyzed alongside it.
 
 **The 180-day OCR deadline does not extend.** Even if the civil lawsuit deadline is years away, the OCR complaint window closes fast. If you are within 180 days of an incident, file the OCR complaint now and consult a civil attorney about the lawsuit track simultaneously.
 
